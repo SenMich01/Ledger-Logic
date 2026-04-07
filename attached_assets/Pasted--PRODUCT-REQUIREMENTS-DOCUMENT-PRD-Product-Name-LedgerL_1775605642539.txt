@@ -1,0 +1,216 @@
+🧾 PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Product Name: LedgerLite (working name)
+1. 🧠 Product Overview
+Problem
+
+Small businesses in Nigeria/Africa:
+
+Still use notebooks or Excel
+Don’t track profit properly
+Lose money through poor debt tracking
+Can’t generate financial reports
+
+These are explicit pain points Luca solves (manual tracking, lack of insights)
+
+Solution
+
+A simple, mobile-first web app that helps SMEs:
+
+Track money (income & expenses)
+Manage customers & debts
+Generate invoices/receipts
+See business performance in real-time
+2. 🎯 Target Users
+Primary Users
+Small business owners (retail, POS shops, fashion, food vendors)
+Freelancers (designers, developers)
+Side hustlers
+Secondary Users
+Accountants managing multiple SMEs
+Sales staff (multi-user access)
+3. ⭐ Core Features (MVP)
+
+These are directly validated from Luca’s real feature set + improved UX.
+
+3.1 Dashboard
+Goal:
+
+Instant financial visibility
+
+Features:
+Total Revenue (Today / Week / Month)
+Total Expenses
+Profit/Loss
+Cash Flow graph
+Outstanding debts
+
+👉 Luca already provides business performance insights and reports
+
+3.2 Income & Expense Tracking
+Features:
+Add transaction:
+Amount
+Category (Sales, Transport, Rent, etc.)
+Payment method (Cash, Bank, POS)
+Auto-categorization
+Daily logs
+
+👉 Core feature validated: “track income and expenses”
+
+3.3 Invoicing & Receipts
+Features:
+Create invoice
+Send via:
+WhatsApp
+Email
+Auto-generate receipt after payment
+Invoice status:
+Paid / Pending / Overdue
+
+👉 Matches Luca’s invoice + receipt system
+
+3.4 Debt Tracking (CRITICAL 🔥)
+Features:
+Track customers who owe money
+Payment reminders (WhatsApp/SMS)
+Debt aging (e.g., 7 days, 30 days)
+
+👉 Directly from Luca: debt tracking + reminders
+
+3.5 Inventory Management
+Features:
+Add products/services
+Track stock levels
+Low-stock alerts
+Cost price vs selling price
+
+👉 Verified: inventory + low stock alerts
+
+3.6 Reports & Analytics
+Features:
+Profit & Loss (P&L)
+Revenue breakdown
+Expense categories
+Cash flow report
+
+👉 Luca generates financial reports and insights
+
+3.7 Customer Management
+Features:
+Customer profiles
+Purchase history
+Outstanding balances
+3.8 Multi-User (Staff Accounts)
+Features:
+Roles:
+Owner
+Manager
+Sales Staff
+Permissions:
+View only
+Add transactions
+Full access
+
+👉 Verified: staff management exists in Luca
+
+4. 💡 Advanced Features (Post-MVP)
+
+This is where you beat Luca 👇
+
+4.1 Bank Integration
+Sync Nigerian bank accounts
+Auto-import transactions
+4.2 AI Insights
+“You are spending too much on X”
+“Your profit dropped 20% this week”
+4.3 CAC Registration Integration
+Register business inside app
+
+👉 Luca already does CAC registration
+
+4.4 Offline Mode
+Store data locally
+Sync when online
+4.5 Tax Calculation (Nigeria)
+VAT tracking
+Simple tax reports
+5. 🧱 Tech Architecture
+Frontend
+React / Next.js
+TailwindCSS
+PWA (so it feels like an app)
+Backend
+Node.js (NestJS recommended)
+PostgreSQL
+Infrastructure
+AWS / GCP
+Redis (for caching)
+S3 (file storage)
+Integrations
+Paystack / Flutterwave (payments)
+WhatsApp API (notifications)
+6. 🔐 Security Requirements
+JWT authentication
+Role-based access control
+Data encryption (at rest + in transit)
+Daily backups
+7. 💰 Monetization Strategy
+
+Validated from Luca pricing model:
+
+👉 Luca charges as low as ₦200 daily / ₦3,000 monthly
+
+Your Pricing:
+Free plan:
+Limited transactions
+Pro:
+₦2,000–₦5,000/month
+Premium:
+Multi-user + analytics
+8. 📊 Success Metrics
+Daily active users (DAU)
+Monthly recurring revenue (MRR)
+Transactions per user
+Retention rate (30-day)
+9. 🧪 MVP Scope (Build This First)
+
+If you want speed:
+
+👉 ONLY build:
+
+Auth (login/signup)
+Transactions (income/expense)
+Dashboard
+Simple reports
+Invoicing
+Debt tracking
+
+That’s enough to compete early.
+
+10. 🧭 UX Principles (VERY IMPORTANT)
+
+Based on why Luca works:
+
+Dead simple UI (no accounting jargon)
+Mobile-first design
+Fast entry (add transaction in <5 seconds)
+Minimal typing
+
+👉 Luca’s success comes from simplicity and ease of use
+
+11. 🚀 Differentiation Strategy (How You Win)
+
+Don’t just copy Luca — beat it:
+
+Better UI/UX
+AI insights
+Stronger automation
+Better onboarding
+More integrations
+12. 🧩 Future Vision
+
+Turn it into:
+
+Full fintech platform
+Business bank account
+Lending (based on cash flow data)
