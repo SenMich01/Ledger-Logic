@@ -49,7 +49,7 @@ export default function TransactionForm() {
         description: form.description || undefined,
         paymentMethod: form.paymentMethod,
         date: new Date(form.date).toISOString(),
-        customerId: form.customerId ? Number(form.customerId) : null,
+        customerId: form.customerId && form.customerId !== "none" ? Number(form.customerId) : null,
       }
     });
   };
@@ -147,7 +147,7 @@ export default function TransactionForm() {
                   <SelectValue placeholder="Select customer" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">No customer</SelectItem>
+                  <SelectItem value="none">No customer</SelectItem>
                   {customers?.data?.map(c => (
                     <SelectItem key={c.id} value={String(c.id)}>{c.name}</SelectItem>
                   ))}
