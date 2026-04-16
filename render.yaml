@@ -11,6 +11,5 @@ services:
 
   - type: static
     name: ledger-logic-frontend
-    rootDir: artifacts/ledger-lite
-    buildCommand: npm install -g pnpm && pnpm install --no-frozen-lockfile && pnpm run build
-    publishDir: dist
+    buildCommand: npm install -g pnpm && pnpm install --no-frozen-lockfile && cd artifacts/ledger-lite && pnpm run build
+    publishDir: artifacts/ledger-lite/dist
