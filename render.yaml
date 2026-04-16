@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ledger-logic-api
+    runtime: node
+    rootDir: artifacts/api-server
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: static
+    name: ledger-logic-frontend
+    rootDir: artifacts/ledger-lite
+    buildCommand: pnpm install && pnpm run build
+    publishDir: dist
