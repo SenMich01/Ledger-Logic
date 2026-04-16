@@ -3,7 +3,7 @@ services:
     name: ledger-logic-api
     runtime: node
     rootDir: artifacts/api-server
-    buildCommand: pnpm install && pnpm run build
+    buildCommand: pnpm install --no-frozen-lockfile && pnpm run build
     startCommand: pnpm run start
     envVars:
       - key: NODE_ENV
@@ -12,5 +12,5 @@ services:
   - type: static
     name: ledger-logic-frontend
     rootDir: artifacts/ledger-lite
-    buildCommand: pnpm install && pnpm run build
+    buildCommand: npm install -g pnpm && pnpm install --no-frozen-lockfile && pnpm run build
     publishDir: dist
