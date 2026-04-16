@@ -13,3 +13,6 @@ services:
     name: ledger-logic-frontend
     buildCommand: npm install -g pnpm && pnpm install --no-frozen-lockfile && cd artifacts/ledger-lite && pnpm run build
     publishDir: artifacts/ledger-lite/dist
+    envVars:
+      - key: PNPM_VERSION
+        value: "9.0.0"
